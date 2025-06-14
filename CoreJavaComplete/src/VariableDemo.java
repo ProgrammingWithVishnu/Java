@@ -1,19 +1,16 @@
     public class VariableDemo {
 
         // ============= INSTANCE VARIABLES =============
-        private String instanceVariable = "I'm an instance variable";
+         String instanceVariable = "I'm an instance variable"; // declared a  variable and intialized also
 
         // Instance final variable - must be initialized in constructor or at declaration
-        private final String INSTANCE_FINAL = "Instance final - cannot change";
+         final String INSTANCE_FINAL = "Instance final - cannot change";
         private final int instanceFinalId;
 
         // ============= xx VARIABLES =============
-        static String staticVariable = "I'm a static variable";
+         static String staticVariable = "I'm a static variable";
 
-        // Static final variables (constants)
-        public static final String CLASS_NAME = "VariableDemo";
-        public static final int MAX_SIZE = 1000;
-        private static final double PI = 3.14159;
+         static final double PI = 3.14159; // global constant
 
         // ============= CONSTRUCTOR =============
         public VariableDemo(int id) {
@@ -43,33 +40,16 @@
 
         // ============= MAIN METHOD FOR DEMONSTRATION =============
         public static void main(String[] args) {
-            System.out.println("=== JAVA VARIABLES DEMONSTRATION ===");
-            // Static variables can be accessed without creating object
-            System.out.println("Static variable before object creation: " + staticVariable);
-
-            // Creating objects
-            VariableDemo demo1 = new VariableDemo(1);
+            VariableDemo demo1 = new VariableDemo(1); // creating object
             VariableDemo demo2 = new VariableDemo(2);
 
-            demo1.demonstrateLocalVariables();
-            // Showing that instance variables are separate for each object
-            System.out.println("\n=== INSTANCE VARIABLE INDEPENDENCE ===");
-            demo2.instanceVariable = "Demo2's instance variable";
+demo2.instanceVariable="test";
             System.out.println("Demo1 instance variable: " + demo1.instanceVariable);
             System.out.println("Demo2 instance variable: " + demo2.instanceVariable);
-
-            // Showing static variables are shared
-            System.out.println("\n=== STATIC VARIABLE SHARING ===");
-            VariableDemo.staticVariable = "Changed by class reference";
+            System.out.println();
+            demo2.staticVariable="Vishnu";
             System.out.println("Accessed via demo1: " + demo1.staticVariable);
             System.out.println("Accessed via demo2: " + demo2.staticVariable);
-            System.out.println("Accessed via class: " + VariableDemo.staticVariable);
 
-            System.out.println("\n=== FINAL VARIABLE SUMMARY ===");
-            System.out.println("Instance final (demo1): " + demo1.INSTANCE_FINAL);
-            System.out.println("Instance final ID (demo1): " + demo1.instanceFinalId);
-            System.out.println("Instance final ID (demo2): " + demo2.instanceFinalId);
-            System.out.println("Static final: " + CLASS_NAME);
-            System.out.println("Static final: " + MAX_SIZE);
         }
     }

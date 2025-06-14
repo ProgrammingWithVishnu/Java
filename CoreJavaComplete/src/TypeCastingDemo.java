@@ -46,7 +46,7 @@ public class TypeCastingDemo {
         
         // Demonstration of data loss
         int largeInt = 300;
-        byte smallByte = (byte) largeInt; // Data loss occurs
+        byte smallByte = (byte) largeInt; // Data loss occurs -128 to +127
         System.out.println("\nData loss example:");
         System.out.println("int " + largeInt + " -> byte: " + smallByte);
     }

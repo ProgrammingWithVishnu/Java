@@ -13,9 +13,10 @@ public class DataTypesDemo {
         // Character and boolean
         char charVar = 'A';
         boolean boolVar = true;
-        
+
         // String (non-primitive)
         String stringVar = "Hello Java";
+
         
         // Arrays
         int[] intArray = {1, 2, 3, 4, 5};
