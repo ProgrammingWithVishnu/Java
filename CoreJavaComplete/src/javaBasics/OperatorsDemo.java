@@ -1,3 +1,5 @@
+package javaBasics;
+
 public class OperatorsDemo {
     public static void main(String[] args) {
         // Arithmetic Operators

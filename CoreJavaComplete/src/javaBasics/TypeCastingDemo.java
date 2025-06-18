@@ -1,3 +1,5 @@
+package javaBasics;
+
 public class TypeCastingDemo {
     public static void main(String[] args) {
         // Implicit Casting (Widening) - Automatic

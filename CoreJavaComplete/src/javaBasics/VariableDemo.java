@@ -1,4 +1,6 @@
-    public class VariableDemo {
+package javaBasics;
+
+public class VariableDemo {
 
         // ============= INSTANCE VARIABLES =============
          String instanceVariable = "I'm an instance variable"; // declared a  variable and intialized also
